@@ -15,17 +15,6 @@ public class P21yo {
 
     public static void main(String[] args) {
         
-        double REPARACION, totalLunes;
-        int lunes,martes,miercoles,jueves,viernes;
-        REPARACION=32.6;
         
-       
-        
-        Scanner entradaTeclado = new Scanner(System.in);
-        System.out.println("cuantas reparaiones el lunes?");
-        lunes = entradaTeclado.nextInt();
-        
-        totalLunes = REPARACION*lunes;
-        System.out.println("Total euros hasta el lunes:" + totalLunes);
     }
 }
