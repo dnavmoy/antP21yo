@@ -14,7 +14,7 @@ public class EjercicioA {
         public static void main(String[] args) {
         
     
-    double REPARACION, totalLunes;
+    double REPARACION, totalLunes,totalMartes;
     int lunes,martes,miercoles,jueves,viernes;
     REPARACION=32.6;
     String dia;
@@ -22,23 +22,24 @@ public class EjercicioA {
        
         
        
-        //lunes = entradaDias("lunes");
-        //martes = entradaDias("martes");
-        lunes= 5;
-        martes= 6;
+       lunes = entradaDias("lunes");
+       martes = entradaDias("martes");
+       
+       
         
-        //totalLunes = REPARACION*lunes;
+        totalLunes = REPARACION*lunes;
+        totalMartes = REPARACION*martes;
         System.out.println("""
-                            total lunes %0.d
-                            total martes %0.d                   
-                         """.formatted(lunes,martes));
+                            total lunes %.2f
+                            total martes %.2f                   
+                         """.formatted(totalLunes,totalMartes));
                 
         }
         
         public static int entradaDias (String dia){
             int numerodia;
             Scanner entradaTeclado = new Scanner(System.in);
-            System.out.println("cuantas reparaciones el?"+ dia);
+            System.out.println("cuantas reparaciones el "+ dia);
             numerodia = entradaTeclado.nextInt();
             return numerodia;
             }
