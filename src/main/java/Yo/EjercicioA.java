@@ -22,16 +22,17 @@ public class EjercicioA {
        
         
        
-        lunes = entradaDias("lunes");
-        martes = entradaDias("martes");
+        //lunes = entradaDias("lunes");
+        //martes = entradaDias("martes");
+        lunes= 5;
+        martes= 6;
         
-        
-        totalLunes = REPARACION*lunes;
-        System.out.printf("""
-                           Total del lunes : %0.i
-                            TOTAL MARTES : %0.i
-                           """,lunes,martes);
-      
+        //totalLunes = REPARACION*lunes;
+        System.out.println("""
+                            total lunes %0.d
+                            total martes %0.d                   
+                         """.formatted(lunes,martes));
+                
         }
         
         public static int entradaDias (String dia){
