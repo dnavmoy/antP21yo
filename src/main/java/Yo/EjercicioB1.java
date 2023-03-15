@@ -5,12 +5,13 @@
 package Yo;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author daniel
  */
-public class EjercicioA {
+public class EjercicioB1 {
         public static void main(String[] args) {
         
     
@@ -50,10 +51,11 @@ public class EjercicioA {
         }
         
         public static int entradaDias (String dia){
-            int numerodia;
-            Scanner entradaTeclado = new Scanner(System.in);
-            System.out.println("cuantas reparaciones el "+ dia);
-            numerodia = entradaTeclado.nextInt();
+            int numerodia=0;
+            String numero=JOptionPane.showInputDialog("""
+                                                      Cuantas reparaciones el día %s
+                                                      """.formatted(dia));
+            numerodia=Integer.parseInt(numero);
             return numerodia;
             }
         }
